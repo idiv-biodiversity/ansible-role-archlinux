@@ -1,0 +1,4 @@
+# {{ ansible_managed }}
+{% for mirror in archlinux_pacman_mirrors %}
+Server = {{ mirror }}
+{% endfor %}

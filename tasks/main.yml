@@ -1,0 +1,35 @@
+---
+
+- name: configure pacman
+  ansible.builtin.template:
+    src: pacman.conf.j2
+    dest: /etc/pacman.conf
+    owner: root
+    group: root
+    mode: 0644
+  tags:
+    - pacman
+    - pacman-conf
+
+- name: configure pacman mirrorlist
+  ansible.builtin.template:
+    src: mirrorlist.j2
+    dest: /etc/pacman.d/mirrorlist
+    owner: root
+    group: root
+    mode: 0644
+  tags:
+    - pacman
+    - pacman-mirrorlist
+
+- name: configure makepkg
+  ansible.builtin.template:
+    src: makepkg.conf.j2
+    dest: /etc/makepkg.conf
+    owner: root
+    group: root
+    mode: 0644
+  tags:
+    - makepkg-conf
+
+...
