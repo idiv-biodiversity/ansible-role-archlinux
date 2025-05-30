@@ -96,6 +96,6 @@ This role was created in 2024 by [Christian Krause][author] aka [wookietreiber a
 
 
 [Archlinux]: https://archlinux.org/
-[author]: https://www.idiv.de/en/groups_and_people/employees/details/61.html
+[author]: https://www.idiv.de/staff/christian-krause/
 [idiv]: https://www.idiv.de/
 [wookietreiber]: https://github.com/wookietreiber
