@@ -6,7 +6,7 @@
     dest: /etc/pacman.conf
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   tags:
     - pacman
     - pacman-conf
@@ -17,7 +17,7 @@
     dest: /etc/pacman.d/mirrorlist
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   tags:
     - pacman
     - pacman-mirrorlist
@@ -28,7 +28,7 @@
     dest: /etc/makepkg.conf
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   tags:
     - makepkg-conf
 
