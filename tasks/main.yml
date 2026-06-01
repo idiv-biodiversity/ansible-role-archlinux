@@ -18,6 +18,8 @@
     owner: root
     group: root
     mode: '0644'
+  when:
+    - archlinux_pacman_mirrors is defined
   tags:
     - pacman
     - pacman-mirrorlist
