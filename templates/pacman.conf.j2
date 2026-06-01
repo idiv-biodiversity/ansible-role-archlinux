@@ -44,7 +44,11 @@ CheckSpace
 #VerbosePkgLists
 ParallelDownloads = 5
 DownloadUser = alpm
+{% if archlinux_pacman_disable_sandbox_filesystem is defined and archlinux_pacman_disable_sandbox_filesystem %}
+DisableSandboxFilesystem
+{% else %}
 #DisableSandboxFilesystem
+{% endif %}
 #DisableSandboxSyscalls
 
 # By default, pacman accepts packages signed by keys that its local keyring
