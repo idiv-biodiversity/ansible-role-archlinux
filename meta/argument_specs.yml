@@ -1,0 +1,67 @@
+---
+
+argument_specs:
+  main:
+    options:
+
+      archlinux_makepkg_builddir:
+        type: str
+
+      archlinux_makepkg_cflags:
+        type: list
+        elements: str
+
+      archlinux_makepkg_cppflags:
+        type: list
+        elements: str
+
+      archlinux_makepkg_cxxflags:
+        type: list
+        elements: str
+
+      archlinux_makepkg_ldflags:
+        type: list
+        elements: str
+
+      archlinux_makepkg_logdest:
+        type: str
+
+      archlinux_makepkg_makeflags:
+        type: list
+        elements: str
+
+      archlinux_makepkg_packager:
+        type: str
+
+      archlinux_makepkg_pkgdest:
+        type: str
+
+      archlinux_makepkg_pkgext:
+        type: str
+
+      archlinux_makepkg_srcdest:
+        type: str
+
+      archlinux_makepkg_srcext:
+        type: str
+
+      archlinux_makepkg_srcpkgdest:
+        type: str
+
+      archlinux_pacman_color:
+        type: bool
+
+      archlinux_pacman_disable_sandbox_filesystem:
+        type: bool
+
+      archlinux_pacman_mirrors:
+        type: list
+        elements: str
+
+      archlinux_pacman_multilib:
+        type: bool
+
+      archlinux_pacman_use_syslog:
+        type: bool
+
+...
