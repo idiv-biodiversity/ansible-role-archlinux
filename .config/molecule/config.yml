@@ -1,0 +1,29 @@
+---
+
+dependency:
+  name: galaxy
+
+driver:
+  name: docker
+
+platforms:
+
+  - name: archlinux
+    image: ghcr.io/idiv-biodiversity/ansible-molecule-archlinux:latest
+    pre_build_image: yes
+    groups:
+      - nosudo
+
+provisioner:
+  name: ansible
+  inventory:
+    group_vars:
+      all:
+        archlinux_pacman_disable_sandbox_filesystem: yes
+      nosudo:
+        ansible_become_method: su
+
+verifier:
+  name: ansible
+
+...
